@@ -11,7 +11,7 @@ from Users import User
 import json
 from fastapi_utils.tasks import repeat_every
 
-# from config.db import conn
+from config.db import conn
 
 # print(22)
 # origins = [
