@@ -13,7 +13,7 @@ class MovieRecommend():
     
     # for remote version use this one
     def extract_movies_list(self):
-        url = r'..\Backend\tmdb_5000_movies.csv'
+        url = '../Backend/tmdb_5000_movies.csv'
         data, data_dict = fetch_csv_to_data_dict_v2(url)
         return serializeList(data_dict)
 
@@ -172,7 +172,7 @@ class MovieRecommend():
     # def fetch_moves_credits(self):
     #     return serializeList(conn.moviesdb.credits.find())
     def fetch_moves_credits(self):
-        url =r'..\Backend\tmdb_5000_credits.csv'
+        url ='../Backend/tmdb_5000_credits.csv'
         data, data_dict = fetch_csv_to_data_dict_v2(url)
         return serializeList(data_dict)
     def recommend_combined(self, list1, list2, list3):
